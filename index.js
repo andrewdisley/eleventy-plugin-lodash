@@ -11,47 +11,47 @@ const util = require('lodash/util');
 
 module.exports = (eleventyConfig) => {
   Object.keys(array).forEach(key => {
-    eleventyConfig.addFilter(`_${key}`, array[key]);
+    eleventyConfig.addFilter(`_${key}`, () => { array[key] });
   });
 
   Object.keys(object).forEach(key => {
-    eleventyConfig.addFilter(`_${key}`, object[key]);
+    eleventyConfig.addFilter(`_${key}`, () => { object[key] });
   });
 
   Object.keys(collection).forEach(key => {
-    eleventyConfig.addFilter(`_${key}`, collection[key]);
+    eleventyConfig.addFilter(`_${key}`, () => { collection[key] });
   });
 
   Object.keys(date).forEach(key => {
-    eleventyConfig.addFilter(`_${key}`, Date[key]);
+    eleventyConfig.addFilter(`_${key}`, () => { Date[key] });
   });
 
   Object.keys(collection).forEach(key => {
-    eleventyConfig.addFilter(`_${key}`, collection[key]);
+    eleventyConfig.addFilter(`_${key}`, () => { collection[key] });
   });
 
   Object.keys(func).forEach(key => {
-    eleventyConfig.addFilter(`_${key}`, func[key]);
+    eleventyConfig.addFilter(`_${key}`, () => { func[key] });
   });
 
   Object.keys(lang).forEach(key => {
-    eleventyConfig.addFilter(`_${key}`, lang[key]);
+    eleventyConfig.addFilter(`_${key}`, () => { lang[key] });
   });
-  
+
   Object.keys(math).forEach(key => {
-    eleventyConfig.addFilter(`_${key}`, math[key]);
+    eleventyConfig.addFilter(`_${key}`, () => { math[key] });
   });
 
   Object.keys(string).forEach(key => {
-    eleventyConfig.addFilter(`_${key}`, string[key]);
+    eleventyConfig.addFilter(`_${key}`, () => { string[key] });
   });
 
   Object.keys(number).forEach(key => {
-    eleventyConfig.addFilter(`_${key}`, number[key]);
+    eleventyConfig.addFilter(`_${key}`, () => { number[key] });
   });
 
   Object.keys(util).forEach(key => {
-    eleventyConfig.addFilter(`_${key}`, util[key]);
+    eleventyConfig.addFilter(`_${key}`, () => { util[key] });
   });
 
 
