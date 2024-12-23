@@ -42,9 +42,9 @@ module.exports = (eleventyConfig) => {
     eleventyConfig.addFilter(`_${key}`, math[key]);
   });
 
-  Object.keys(string).forEach(key => {
-    eleventyConfig.addFilter(`_${key}`, string[key]);
-  });
+  // Object.keys(string).forEach(key => {
+  //   eleventyConfig.addFilter(`_${key}`, string[key]);
+  // });
 
   Object.keys(number).forEach(key => {
     eleventyConfig.addFilter(`_${key}`, number[key]);

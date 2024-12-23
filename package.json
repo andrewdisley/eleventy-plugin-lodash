@@ -1,6 +1,6 @@
 {
   "name": "@jamshop/eleventy-plugin-lodash",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Add lodash filters to 11ty.",
   "main": "index.js",
   "scripts": {
